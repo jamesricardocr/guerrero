@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 body {
   /* background-color: #000000; */
   color: white;
@@ -19,16 +20,59 @@ body {
   background-size: cover;
   background-color: black;
 }
+
+/* ############################### */
+.container-logo-animacion{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo{
+  width: 50%;
+}
+
+.animacion{
+  width: 50%;
+  animation-duration: 4s;
+  animation-name: agrandar;
+}
+
+@keyframes agrandar {
+  from{
+    width: 100%;
+  }
+  to {
+    width: 50%;
+    opacity: 10%;
+  }
+}
+
+
+/* ############################################## */
 .container-home {
   background-image: url("./img/fondoHome.png");
-}
-/* ############################################## */
+  animation-duration: 3000ms;
+  animation-name: principal;
+  }
 
+@keyframes principal {
+  from{
+    opacity: 20%;
+  }
+  to{
+   opacity: 100%;
+  }
+}
+
+
+.container-top-home{
+  height: 50%;
+}
 .container-bottom-home {
   height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .form-home {
@@ -55,32 +99,72 @@ body {
   width: 110%;
 }
 
+#label {
+  color: #edab37;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
 /* ########################################## */
 .container-educacion {
-    background-image: url('./img/meditar.png');
-    background-position-x: 0px;
+    background-color: black;
 }
+
+
+
+
+
+
 
 /* ############################################ */
 .container-servicios {
+
 }
+
+
+
+
 
 /* ############################################ */
 .container-sobre-mi {
   background-image: url('./img/pipanew.png');
   background-position-x: -50px;
+  
 }
 
-.container-top-sobre-mi {
+.container-top-sobre-mi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 70%;
+}
 
+.container-bottom-sobre-mi{
+  height: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenido-sobre-mi{
+  width: 65%;
+  height: 75%;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: right;
+  line-height: 2;
+  margin-right: 10px;
+  overflow: auto;
+}
+
+.contenido-sobre-mi p{
+  height: 60%;
 }
 
 .pipa {
 display: none;
 }
-.container-top-home {
-  height: auto;
-}
+
 
 /* ############################################## */
 
@@ -88,6 +172,7 @@ display: none;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  width: 50%;
 }
 
 .navegacion {
@@ -104,4 +189,14 @@ display: none;
 }
 .trompeta-icon {
   width: 36px;
+}
+
+
+/* ########################################### */
+
+.container-top-discografia{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 100%;
 }

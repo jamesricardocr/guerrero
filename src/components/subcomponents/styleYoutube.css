@@ -1,0 +1,23 @@
+iframe {
+
+}
+
+.videos-youtube{
+    width: 100%;
+    display: flex;
+    overflow:  auto;
+}
+
+.musica-spotify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: 450px;
+}
+
+.musica-spotify iframe{
+    height: 70px;
+    width: 90%;
+    margin: 15px 0 15px 10px;
+}

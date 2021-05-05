@@ -5,10 +5,19 @@ const FormHome = () => {
     return ( 
         <Fragment>
             <form className="form-home">
-            <RedesSociales/>
-                <input type="Email" placeholder="correo@correo.com"/>
-                <input type="number" placeholder="32.."/>
-                <button type="submit">Enviar</button>
+
+                <label 
+                id="label" 
+                htmlFor="numeroContacto"
+                >Nombre</label>
+
+                <input 
+                type="text"  
+                name="tu nombre"/>
+
+                <button 
+                type="submit"
+                >Contactar</button>
             </form>
         </Fragment>       
     );

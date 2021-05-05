@@ -6,7 +6,7 @@ const Navegacion = () => {
     return ( 
         <Fragment>
             <div className="navegacion">
-            <Link to="/"><i class="iconos fas fa-home"></i></Link>
+            <Link to="/home"><i class="iconos fas fa-home"></i></Link>
             <Link to="/educacion"><i class="iconos fas fa-book"></i></Link>
             <Link to="/sobre-mi"><i class="iconos fas fa-user"></i></Link>
             <Link to="/servicios"><img src={trompeta} alt="" className="trompeta-icon"/></Link>
