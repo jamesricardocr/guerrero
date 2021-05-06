@@ -1,20 +1,20 @@
 import React, {Fragment} from 'react'
 import logo from '../../img/logoBlanco.png'
-import Home from '../Home';
+import {  useHistory } from 'react-router-dom';
+
+
+
 
 const Logo = ({animacion}) => {
     
+    const history = useHistory();
+
     if(animacion){
         setTimeout(() => {
-            window.location.href = '/home?id=1'
+            history.push('/home');
         }, 4500);
     }
-    
-    const logoAnimado = true;
-    
-    <Home
-        logoAnimado={logoAnimado}
-    />
+
     return ( 
         <Fragment>
             {animacion
