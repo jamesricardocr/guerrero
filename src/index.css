@@ -5,16 +5,16 @@
 }
 
 body {
-  /* background-color: #000000; */
+  background-color: #000000;
   color: white;
   text-align: center;
-  height: 100vh;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,23 +22,23 @@ body {
 }
 
 /* ############################### */
-.container-logo-animacion{
-display: flex;
-justify-content: center;
-align-items: center;
+.container-logo-animacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo{
+.logo {
   width: 50%;
 }
 
-.animacion{
+.animacion {
   width: 50%;
   animation-duration: 4s;
   animation-name: agrandar;
 }
 
 @keyframes agrandar {
-  from{
+  from {
     width: 100%;
   }
   to {
@@ -47,25 +47,23 @@ align-items: center;
   }
 }
 
-
 /* ############################################## */
 .container-home {
   background-image: url("./img/fondoHome.png");
   animation-duration: 3000ms;
   animation-name: principal;
-  }
+}
 
 @keyframes principal {
-  from{
+  from {
     opacity: 20%;
   }
-  to{
-   opacity: 100%;
+  to {
+    opacity: 100%;
   }
 }
 
-
-.container-top-home{
+.container-top-home {
   height: 50%;
 }
 .container-bottom-home {
@@ -108,63 +106,94 @@ align-items: center;
 
 /* ########################################## */
 .container-educacion {
-    background-color: black;
+  background-color: black;
 }
-
-
-
-
-
-
-
-/* ############################################ */
-.container-servicios {
-
-}
-
-
-
-
 
 /* ############################################ */
 .container-sobre-mi {
-  background-image: url('./img/pipanew.png');
-  background-position-x: -50px;
-  
+  background-image: url("./img/pipanewl.png");
+  background-position-x: 65px;
 }
 
-.container-top-sobre-mi{
+.container-top-sobre-mi {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 70%;
-}
-
-.container-bottom-sobre-mi{
-  height: 30%;
-  display: flex;
-  justify-content: flex-end;
-}
-.contenido-sobre-mi{
-  width: 65%;
-  height: 75%;
-  font-size: 14px;
-  font-weight: 100;
-  text-align: right;
-  line-height: 2;
-  margin-right: 10px;
+  align-items: flex-start;
+  height: 90%;
   overflow: auto;
 }
 
-.contenido-sobre-mi p{
+.container-bottom-sobre-mi {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenido-sobre-mi, .disco1 {
+  width: 70%;
+  height: 450px;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: left;
+  line-height: 2;
+  margin-left: 8px;
+}
+
+.contenido-sobre-mi p {
   height: 60%;
 }
 
 .pipa {
-display: none;
+  display: none;
 }
 
+/* ############################################ */
+.container-servicios {
+  background-image: url("./img/trumpet.png");
+  background-size: contain;
+  background-position-x: 70px;
+  width: 100%;
+}
+.superior {
+  height: 10%;
+}
+.container-lista-servicios {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 100;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+}
+
+.servicios {
+  width: 70%;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.servicios h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #edab37;
+  margin: 10px 0;
+}
+
+.servicios p {
+  line-height: 2;
+}
+
+.btn {
+  display: block;
+  padding: 5px;
+  margin: 15px 0 15px 0;
+  background-color: #edab37;
+  color: rgb(14, 14, 14);
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+}
 
 /* ############################################## */
 
@@ -172,7 +201,7 @@ display: none;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 .navegacion {
@@ -191,12 +220,36 @@ display: none;
   width: 36px;
 }
 
-
 /* ########################################### */
 
-.container-top-discografia{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-height: 100%;
+.container-top-discografia {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.musica-spotify {
+  display: flex;
+
+  width: 100%;
+}
+
+.disco1{
+  width: 300px;
+  margin-right: 30px;
+  margin-left: 8px;
+  text-align: center;
+}
+
+.disco1 p{
+  margin-top: 30px;
+
+}
+
+.musica-spotify iframe {
+  height: 300px;
+  width: 300px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 2px 2px #000000;
+
 }
