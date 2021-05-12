@@ -9,6 +9,7 @@ body {
   color: white;
   text-align: center;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,14 @@ body {
   background-size: cover;
   background-color: black;
 }
+
+
+@media(min-width: 600px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
 
 .container-top-home {
   margin-top: 80px;
@@ -37,13 +46,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(min-width: 600px) {
+  .logo {
+    width: 25%;
+  }
 }
 
 .animacion {
   width: 50%;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-name: agrandar;
 }
 
@@ -60,19 +78,18 @@ body {
 /* ############################################## */
 .container-home {
   background-image: url("./img/fondoHome.png");
-  animation-duration: 3000ms;
-  animation-name: principal;
 }
 
-@keyframes principal {
-  from {
-    opacity: 20%;
+@media(min-width: 600px) {
+  .container-home {
+    background-size: contain;
   }
-  to {
-    opacity: 100%;
+  .logo-home{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
-
 .container-top-home {
   height: 50%;
 }
@@ -130,11 +147,7 @@ body {
   overflow: auto;
 }
 
-.container-bottom-sobre-mi {
-  height: 10%;
-  display: flex;
-  justify-content: flex-end;
-}
+
 .contenido-sobre-mi,
 .disco1 {
   width: 70%;
@@ -143,7 +156,7 @@ body {
   font-weight: 100;
   text-align: left;
   line-height: 2;
-  margin-left: 8px;
+  margin-left: 18px;
 }
 
 .contenido-sobre-mi p {
@@ -154,6 +167,21 @@ body {
   display: none;
 }
 
+@media(min-width: 600px) {
+  .container-sobre-mi {
+    background-size: contain;
+    background-position-x: 100%;
+  }
+  .contenido-sobre-mi{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 2.5;
+  }
+
+}
 /* ############################################ */
 .container-servicios {
   background-image: url("./img/trumpet.png");
@@ -165,7 +193,11 @@ body {
   height: 70%;
 }
 .superior {
-  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  margin-top: 10px;
 }
 .container-lista-servicios {
   display: flex;
@@ -180,7 +212,7 @@ body {
 .servicios {
   width: 70%;
   text-align: left;
-  margin-left: 8px;
+  margin-left: 18px;
 }
 
 .servicios h2 {
@@ -206,6 +238,27 @@ body {
   font-size: 12px;
 }
 
+@media(min-width: 600px) {
+  .container-servicios {
+    background-size: cover;
+    background-position-x: 70px;
+
+  }
+
+  .servicios {
+    display: block;
+    margin: auto;
+    font-size: 18px;
+  }
+  .btn {
+    display: block;
+    padding: 10px;
+    margin: 15px 0 15px 0;
+    width: 10%;
+    font-size: 16px;
+}
+}
+
 /* ############################################## */
 
 .redes-sociales {
@@ -215,22 +268,59 @@ body {
   width: 70%;
 }
 
+@media(min-width: 600px) {
+  .redes-sociales {
+    justify-content: flex-start;
+  }
+
+}
+
+/* ######################################## */
+
 .navegacion {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 35px;
 }
 
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #edab37;
+}
+
+a p{
+  font-size: 8px;
+  text-transform: uppercase;
+}
 .iconos {
-  margin-right: 10px;
   color: #edab37;
   font-size: 30px;
   padding: 5px;
 }
 .trompeta-icon {
   width: 36px;
+  margin-bottom: 4px;
 }
 
+@media(min-width: 600px) {
+  .navegacion {
+   width: 70%;
+   margin: 0 auto 35px auto;
+  }
+  .iconos {
+    font-size: 40px;
+  }
+  .trompeta-icon {
+    width: 46px;
+  }
+  a p{
+    font-size: 14px;
+  }
+}
 /* ########################################### */
 
 .container-top-discografia {
@@ -246,10 +336,11 @@ body {
   align-items: center;
 }
 
+
 .disco1 {
   width: 300px;
-  margin-right: 30px;
-  margin-left: 8px;
+  margin-right: 15px;
+  margin-left: 10px;
   text-align: center;
 }
 
@@ -263,6 +354,18 @@ body {
   margin-right: 20px;
   box-shadow: 2px 2px 2px 2px #000000;
 }
+
+@media(min-width: 600px) {
+  .musica-spotify {
+    justify-content: center
+  }
+  .musica-spotify iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
 
 /* ########################## */
 .container-educacion{
@@ -280,6 +383,11 @@ body {
   height: 50%;
   overflow: auto;
 }
+
+.logo-documento-pdf{
+  margin-right: 5px;
+}
+
 .documento-pdf {
   display: flex;
   align-items: center;
@@ -303,10 +411,44 @@ body {
   display: flex;
   height: 50%;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px 0 10px 18px;
   overflow: auto;
 }
+
 .videos-educacion iframe {
 height: 180px;
 margin-right: 20px;
+}
+
+@media(min-width: 600px) {
+  .container-top-educacion{
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .container-documento-pdf{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .documento-pdf p, .documento-pdf h2 {
+    font-size: 18px;
+  }
+
+  .videos-educacion {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .videos-educacion iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
 }

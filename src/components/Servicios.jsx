@@ -7,9 +7,7 @@ const Servicios = () => {
     return (
         <Fragment>
             <div className="container container-servicios">
-            <div className="superior">
                 <Logo/>
-            </div>
             <div className="container-top-servicios">
             <ServiciosBtn/>
             </div>

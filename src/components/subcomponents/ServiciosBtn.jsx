@@ -12,7 +12,7 @@ const ServiciosBtn = () => {
             <div className="container-lista-servicios">
                 <div className="servicios">
                     <h2>Clases particulares </h2>
-                    <p>clases de trompeta, armonía moderna, improvisación, arreglos y pedagogía musical.</p>
+                    <p>Clases de trompeta, armonía moderna, improvisación, arreglos y pedagogía musical.</p>
                     <h3 className="btn" onClick={()=> contactar('Clases particulares')}>Contactar</h3>  
                 </div>
                 <div className="servicios">
@@ -22,7 +22,7 @@ const ServiciosBtn = () => {
                 </div>
                 <div className="servicios">
                     <h2>Grabación de trompetas y flugelhorn </h2>
-                    <p>Ofrezco la posibilidad de realizar grabaciones remotas. Equipos de grabacion:
+                    <p>Ofrezco la posibilidad de realizar grabaciones remotas. Equipos de grabación:
                     Interface audient id14 mk2, micrófonos rode nt1 a y Sm 57.</p>
                     <h3 className="btn" onClick={()=> contactar('Grabación de trompetas y flugelhorn')}>Contactar</h3>  
                 </div>

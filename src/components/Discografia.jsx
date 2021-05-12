@@ -9,9 +9,7 @@ const Discografia = () => {
 
     <Fragment >
         <div className="container container-discografia">
-           <div className="superior">
-           <Logo/>
-               </div> 
+            <Logo/>
         <div className="container-top-discografia">
             <Spotify/>
         </div>

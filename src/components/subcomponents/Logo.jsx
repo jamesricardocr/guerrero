@@ -12,7 +12,7 @@ const Logo = ({animacion}) => {
     if(animacion){
         setTimeout(() => {
             history.push('/home');
-        }, 4500);
+        }, 2500);
     }
 
     return ( 

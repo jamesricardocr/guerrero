@@ -8,9 +8,7 @@ const Educacion = () => {
     return (
         <Fragment>
             <div className="container container-educacion">
-                <div className="superior">
                     <Logo/>
-                </div>
             <div className="container-top-educacion">
                 <Pdf/>
                 <Videos/>
