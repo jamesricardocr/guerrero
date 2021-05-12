@@ -1,13 +1,19 @@
 import React,{Fragment} from 'react';
 import Navegacion from './subcomponents/Navegacion';
 import Logo from './subcomponents/Logo';
+import Pdf from './subcomponents/Pdf'
+import Videos from './subcomponents/Videos'
 
 const Educacion = () => {
     return (
         <Fragment>
             <div className="container container-educacion">
+                <div className="superior">
+                    <Logo/>
+                </div>
             <div className="container-top-educacion">
-            <Logo/> 
+                <Pdf/>
+                <Videos/>
             </div>
             <Navegacion/>
             </div>
