@@ -9,7 +9,9 @@ body {
   color: white;
   text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -169,7 +171,7 @@ body {
 
 @media(min-width: 600px) {
   .container-sobre-mi {
-    background-size: contain;
+    background-size: auto;
     background-position-x: 100%;
   }
   .contenido-sobre-mi{
@@ -178,6 +180,7 @@ body {
     margin: 0 auto;
     font-size: 18px;
     font-weight: 100;
+    text-align: justify;
     line-height: 2.5;
   }
 
@@ -188,9 +191,10 @@ body {
   background-size: contain;
   background-position-x: 70px;
   width: 100%;
+
 }
 .container-top-servicios {
-  height: 70%;
+  height: 60%;
 }
 .superior {
   display: flex;
@@ -204,7 +208,7 @@ body {
   flex-direction: column;
   font-size: 14px;
   font-weight: 100;
-  height: 90%;
+  height: 100%;
   width: 100%;
   overflow: auto;
 }
@@ -233,9 +237,15 @@ body {
   background-color: #edab37;
   color: rgb(14, 14, 14);
   width: 25%;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ebbb69;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.686);
 }
 
 @media(min-width: 600px) {
@@ -246,15 +256,15 @@ body {
   }
 
   .servicios {
-    display: block;
     margin: auto;
-    font-size: 18px;
+    font-size: 16px;
   }
+
   .btn {
     display: block;
-    padding: 10px;
-    margin: 15px 0 15px 0;
-    width: 10%;
+    padding: 6px;
+    margin: 10px 0 10px 0;
+    width: 15%;
     font-size: 16px;
 }
 }
@@ -266,6 +276,10 @@ body {
   justify-content: center;
   margin-bottom: 20px;
   width: 70%;
+}
+
+.redes-sociales i{
+  cursor: pointer;
 }
 
 @media(min-width: 600px) {
@@ -280,7 +294,8 @@ body {
 .navegacion {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
 a {
@@ -312,13 +327,13 @@ a p{
    margin: 0 auto 35px auto;
   }
   .iconos {
-    font-size: 40px;
+    font-size: 35px;
   }
   .trompeta-icon {
-    width: 46px;
+    width: 40px;
   }
   a p{
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /* ########################################### */
@@ -382,6 +397,10 @@ a p{
 .container-documento-pdf {
   height: 50%;
   overflow: auto;
+}
+
+.contenido-documento-pdf p{
+  cursor: pointer;
 }
 
 .logo-documento-pdf{
@@ -452,3 +471,40 @@ margin-right: 20px;
     margin-bottom: 30px;
   }
 }
+
+/* ############################## */
+.base{
+  display: flex;
+  flex-direction: column;
+}
+.copy{
+  font-weight: 100;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: white;
+  animation-duration: 1.5s;
+  animation-name: grande;
+}
+
+.copy:hover{
+  color: #edab37;
+}
+
+@media(min-width: 600px) {
+  .copy a{
+    text-align: right;
+  }
+}
+
+
+@keyframes grande {
+  from {
+   color: #edab37;
+  }
+  to {
+    color: #000000;
+  }
+}
+
+/* iconos pointer */

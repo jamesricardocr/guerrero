@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import Navegacion from './subcomponents/Navegacion';
 import logo from '../img/logoBlanco.png';
-import FormHome from './subcomponents/FormHome';
+
 
 const Home = () => {
 
@@ -15,6 +15,7 @@ const Home = () => {
                 {/* <FormHome/> */}
                 <Navegacion/>
             </div>
+
         </Fragment>
     );
 }

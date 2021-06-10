@@ -32,7 +32,7 @@ const Pdf = () => {
                     <i className="iconos fas fa-file-pdf"></i>
                 </div>
                 <div className="contenido-documento-pdf">
-                    <h2>Cómo improvisar en 5 pasos</h2>
+                    <h2>Cómo improvisar en 5 pasos.</h2>
                     <p onClick={()=> openDocument(1)}>Descargar.pdf</p>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const Pdf = () => {
                     <i className="iconos fas fa-file-pdf"></i>
                 </div>
                 <div className="contenido-documento-pdf">
-                    <h2>Jordu - Clifford Brown transcription Partitura completa.pdf</h2>
+                    <h2>Jordu - Clifford Brown transcription.</h2>
                     <p onClick={()=> openDocument(2)}>Descargar.pdf</p>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const Pdf = () => {
                     <i className="iconos fas fa-file-pdf"></i>
                 </div>
                 <div className="contenido-documento-pdf">
-                    <h2>There will never be another you Woody Shaw - Partitura completa</h2>
+                    <h2>There will never be another you Woody Shaw.</h2>
                     <p onClick={()=> openDocument(3)}>Descargar.pdf</p>
                 </div>
             </div>
